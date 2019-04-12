@@ -429,10 +429,10 @@ func (g *game) print(view *gocui.View) {
 	if g.replaying() {
 		g.printOption("^SPACE", "reset", view)
 		if g.canSpeedUpReplay() {
-			g.printOption("left", "faster", view)
+			g.printOption("right", "faster", view)
 		}
 		if g.canSlowDownReplay() {
-			g.printOption("right", "slower", view)
+			g.printOption("left", "slower", view)
 		}
 		if g.canSpeedUpReplay() {
 			g.printOption("up", "faster", view)
