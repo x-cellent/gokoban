@@ -382,6 +382,7 @@ func (g *game) reset() {
 	g.replayPaused = false
 	g.replayIndex = 0
 	g.level.Reset()
+	command.Bus.Clear()
 	g.update()
 }
 
